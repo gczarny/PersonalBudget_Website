@@ -1,14 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <!-- this will tell a mobilephones that they should not zoom out the page, but to start with initial scale -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="With PersonalBudget App you will easly                                         organize your financial life.">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animated.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        
+        <title>Personal Finances</title>
+        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
     </head>
     
     <body>
         <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo-white.png" alt="PB logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="#signin">Sign in</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="budget-text-box">
+                <h1>Can't handle your finances?<br>Simplify your life with this app.</h1>
+                <a class="btn btn-full" href="#">Register</a>
+                <a class="btn btn-ghost" href="#">Show me more</a>
+            </div>
         </header>
         
+        <section class="section-more" id="more">
+            <div class="row">
+                <h2>Organize your life &mdash; take care of your finances</h2>
+                <p class="long-copy">
+                    Hello, I would like to present you an App that will simplify your everyday life &mdash; now you will see how easy it might be to manage your finances. Save your energy and see how easy you can control your incomes and outcomes everyday!
+                </p>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-android-create icon-big"></i>
+                    <h3>Register</h3>
+                    <p>In order to use it you need to register, just provide your email, login and password.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-android-cloud icon-big"></i>
+                    <h3>All in one</h3>
+                    <p>Put  your incomes and outcomes, all will be saved in database with correct date.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-document-text icon-big"></i>
+                    <h3>History</h3>
+                    <p>Do you want to know when did you spent so much money year ago? Or want to handle incomes from last month? All is in your history, just write a period you are interested in.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-settings icon-big"></i>
+                    <h3>Settings</h3>
+                    <p>Create your own categories, edit your accounts, delete or add incomes and outcomes, whatever your like, its all yours to decide.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-form">
+            <div class="row">
+                <h2>Interested? Just register :) </h2>
+            </div>
+            <div class="row">
+                <form method="post" action"#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="lastName">Last Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="lastName" id="lastName" placeholder="Your last name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="pass">Password (6 chars min.)</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="password" name="password" id="pass" minlength="6" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Register!"> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
         
         <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2021 by Grzegorz Czarny. All rights reserved.
+                </p>
+            </div>
         </footer>
     </body>
 </html>

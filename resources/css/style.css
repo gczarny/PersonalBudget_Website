@@ -1,0 +1,330 @@
+/* --------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* supporting IE */
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* --------------------------------- */
+/* REPEATING COMPONENTS */
+/* --------------------------------- */
+.row {
+	max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* --------------------------------- */
+/* PARAGRAMS */
+/* --------------------------------- */
+.long-copy {
+	line-height: 140%;
+    width: 70%;
+    margin-left: 15%; /* margin-left 15% and right 15%, width 70%, that will give us centered */
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* --------------------------------- */
+/* HEADINGS */
+/* --------------------------------- */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* something that will appear after h2 */
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #6495ED;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff; 
+    font-size: 240%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* --------------------------------- */
+/* LINKS */
+/* --------------------------------- */
+
+a:link,
+a:active {
+    color: #6495ED;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #6495ED;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/* --------------------------------- */
+/* BUTTONS */
+/* --------------------------------- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #6495ED;
+    border: 1px solid #6495ED;
+    color: white;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #6495ED;
+    color: #6495ED;
+}
+
+/* when we put a mouse on a buttom */
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #00008B;
+}
+
+.btn-full:hover,
+.brn-full:active {
+    border: 1px solid #00008B;   
+}
+
+.btn-ghost:hover,
+.brn-ghost:active {
+    border: 1px solid #00008B; 
+    color: #fff;
+}
+
+/* --------------------------------- */
+/* HEADER */
+/* --------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/main-finance.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+ 
+.budget-text-box{
+    position: absolute; /* absolute so we can vertically and horizontally center it */
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* translate the element half of its width and weight up and to the left */
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+	float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+	display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #6495ED;
+}
+
+/* --------------------------------- */
+/* SECTION MORE */
+/* --------------------------------- */
+
+.section-more .long-copy {
+	margin-bottom: 40px;
+}
+
+
+/* --------------------------------- */
+/* REGISTER FORM */ 
+/* --------------------------------- */
+
+.contact-form {
+	width: 60%;
+    margin: 0 auto; /* center form */
+}
+
+input[type=text],
+input[type=email],
+input[type=password]{
+    width: 100%;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+*:focus {outline: none;}
+
+/* --------------------------------- */
+/* FOOTER */ 
+/* --------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 45px;
+    font-size: 80%;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+
+.footer-nav {
+	list-style: none;
+    float: left;
+}
+
+.social-links {
+	list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+
+.ion-social-facebook,
+.ion-social-googleplus,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 150%;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
