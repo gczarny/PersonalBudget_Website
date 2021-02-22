@@ -11,12 +11,8 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/animated.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
-        
         <title>Personal Finances App</title>
         <link rel="shortcut icon" href="resources/favicons/favicon.ico">
-        <meta name="msapplication-TileColor" content="#6495ED">
-        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
     </head>
     
     <body>
@@ -158,12 +154,16 @@
         
         <div class="bg-modal">
             <div class="modal-content">
-                <div class="btn-close">X</div>
                 <img src="resources/img/logo-white.png" alt="PB logo">
-                <form action="">
-                    <input type="text" placeholder="Login">
-                    <input type="text" placeholder="Password">
-                    <a href="" class="btn btn-login">Submit</a>
+                <div class="btn-close">X</div>
+                <div id="login-error-msg-modal">
+                    <p id="login-error-msg">Invalid username and/or password</span></p>
+                </div>
+                <form id="login-form">
+                    <input type="text" name="username" id="username-field" placeholder="Login">
+                    <input type="password" name="password" id="password-field" placeholder="Password">
+                    <!-- <a href="" class="btn btn-login">Submit</a> -->
+                    <input type="submit" value="Login" id="login-form-submit">
                 </form>
             </div>
         </div>

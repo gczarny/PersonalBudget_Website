@@ -75,11 +75,32 @@ $(document).ready(function() {
     
     document.getElementById('btn-signin').addEventListener('click', function(){
         $('html, body').animate({scrollTop: $('.js--header').offset().top}, 1000);
-        if (($('html').innerHeight() + $('html').scrollTop()) >= $("body").height())
-            document.querySelector('.bg-modal').style.display = 'flex';
+        if (($('html').innerHeight() + $('html').scrollTop()) >= $("body").height()){
+                
+                document.querySelector('.bg-modal').style.display = 'flex';  
+        }
     });
+    
 
     document.querySelector('.btn-close').addEventListener('click', function(){
         document.querySelector('.bg-modal').style.display = 'none';
     });
+    
+    const loginForm = document.getElementById("login-form");
+    const loginButton = document.getElementById("login-form-submit");
+    const loginErrorMsg = document.getElementById("login-error-msg");
+    document.getElementById("login-form-submit").addEventListener('click', (e) => {
+        e.preventDefault();
+        const username = loginForm.username.value;
+        const password = loginForm.password.value;
+        if(username == "user" && password == "web") {
+            alert("You have successfully logged in.");
+            location.reload();
+         } else {
+            document.getElementById("login-error-msg").style.opacity = 1;
+        }
+    });  
+
 });
+    
+    

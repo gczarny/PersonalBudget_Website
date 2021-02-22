@@ -387,12 +387,13 @@ footer p {
 	height: 70px;
     display: block;
     margin: 0 auto;
-    margin-top: 10px
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .modal-content {
 	width: 500px;
-    height: 300px;
+    height: 400px;
     background-color: white;
     border-radius: 5px;
     text-align: center;
@@ -415,6 +416,39 @@ footer p {
     transform: rotate(90deg);
     cursor: pointer;
 }
+
+#login-form-submit {
+  width: 50%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #6495ED;
+  cursor: pointer;
+  outline: none;
+}
+
+#login-error-msg-modal {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+
+}   
+
+#login-error-msg {
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    padding: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+}   
 
 
 

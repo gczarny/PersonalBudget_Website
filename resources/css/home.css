@@ -1,0 +1,279 @@
+/* --------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* supporting IE */
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* --------------------------------- */
+/* REPEATING COMPONENTS */
+/* --------------------------------- */
+.row {
+	max-width: 1140px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* --------------------------------- */
+/* PARAGRAMS */
+/* --------------------------------- */
+.long-copy {
+	line-height: 140%;
+    width: 70%;
+    margin-left: 15%; /* margin-left 15% and right 15%, width 70%, that will give us centered */
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* --------------------------------- */
+/* ICONS */
+/* --------------------------------- */
+
+.icon-big {
+    font-size: 200%;
+    display: block;
+    color: #6495ED;
+}
+
+/* --------------------------------- */
+/* HEADINGS */
+/* --------------------------------- */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* something that will appear after h2 */
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #6495ED;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff; 
+    font-size: 240%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* --------------------------------- */
+/* HEADER */
+/* --------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/finance-header-main.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 20vh;
+}
+
+.logo {
+    height: 40px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 90%;
+}
+
+.main-nav {
+	float: right;
+    list-style: none;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.main-nav li {
+	display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #6495ED;
+}
+
+/* Sticky navi created in JS */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+	margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+	padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 5px;
+}
+
+/* --------------------------------- */
+/* SIDEBAR */
+/* --------------------------------- */
+
+.sidebar {
+	margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #6495ED;
+  color: white;
+}
+
+/* --------------------------------- */
+/* FOOTER */ 
+/* --------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 45px;
+    font-size: 80%;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+
+.footer-nav {
+	list-style: none;
+    float: left;
+}
+
+.social-links {
+	list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
